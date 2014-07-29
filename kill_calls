@@ -1,0 +1,97 @@
+import libtcodpy2 as libtcod
+
+def corrupt_kcall():
+    strike_Kill =  libtcod.random_get_int(0,1,9)
+        
+    if strike_Kill  == int(1):
+        RAN_Kill = str( "'s head rolls across the floor!")
+    elif strike_Kill  == int(2):
+        RAN_Kill = str(' is been slaughtered!')
+    elif strike_Kill  == int(3):
+        RAN_Kill = str(' loses his life to the dwarf!')
+    elif strike_Kill  == int(4):
+        RAN_Kill = str(" won't be bothering us any longer!")
+    elif strike_Kill  == int(5):
+        RAN_Kill = str( " takes it's last breath!")    
+    elif strike_Kill  == int(6):
+        RAN_Kill = str(' is put to rest!')
+    elif strike_Kill  == int(7):
+        RAN_Kill = str(" lets out a whelp before being slain!")
+    elif strike_Kill  == int(8):
+        RAN_Kill = str( " is rendered useless!")            
+    else:
+        RAN_Kill = str( ' kicked the bucket!')
+        
+    return RAN_Kill
+    
+def beast_kcall():
+    strike_Kill = libtcod.random_get_int(0,1,9)
+        
+    if strike_Kill  == int(1):
+        RAN_Kill = str( ' has taken a deadly blow to the head!')
+    elif strike_Kill  == int(2):
+        RAN_Kill = str(' is torn appart!')
+    elif strike_Kill  == int(3):
+        RAN_Kill = str(' will no longer walk among beasts!')
+    elif strike_Kill  == int(4):
+        RAN_Kill = str(" gives a good fight before it falls dead!")
+    elif strike_Kill  == int(5):
+        RAN_Kill = str( " falls to the ground!")    
+    elif strike_Kill  == int(6):
+        RAN_Kill = str(" struggles to take a heavy blow from the dwarf!")
+    elif strike_Kill  == int(7):
+        RAN_Kill = str(" falls dead. Our dwarf can sense the fear in the other beasts!")
+    elif strike_Kill  == int(8):
+        RAN_Kill = str( " is smashed into an unrecognisable mush!")            
+    else:
+        RAN_Kill = str(' dies!' )
+        
+    return RAN_Kill
+    
+def undead_kcall():
+    strike_Kill = libtcod.random_get_int(0,1,9)
+        
+    if strike_Kill  == int(1):
+        RAN_Kill = str( ' crumbles to pieces!')
+    elif strike_Kill  == int(2):
+        RAN_Kill = str(' falls lifeless!')
+    elif strike_Kill  == int(3):
+        RAN_Kill = str(' can no longer pull itself together!')
+    elif strike_Kill  == int(4):
+        RAN_Kill = str(" surrenders to the powerful dwarf!")
+    elif strike_Kill  == int(5):
+        RAN_Kill = str( " is now in many pieces!")    
+    elif strike_Kill  == int(6):
+        RAN_Kill = str(" smashes against a wall!")
+    elif strike_Kill  == int(7):
+        RAN_Kill = str(" collapses limp!")
+    elif strike_Kill  == int(8):
+        RAN_Kill = str( " is no longer a threat!")            
+    else:
+        RAN_Kill = str(" has his head pulled off and smashed between the dwarf's boot and the floor" )
+        
+    return RAN_Kill    
+    
+def evil_kcall():
+    strike_Kill = libtcod.random_get_int(0,1,9)
+        
+    if strike_Kill  == int(1):
+        RAN_Kill = str( ' disappears!')
+    elif strike_Kill  == int(2):
+        RAN_Kill = str(' shrieks!')
+    elif strike_Kill  == int(3):
+        RAN_Kill = str(' vanishes!')
+    elif strike_Kill  == int(4):
+        RAN_Kill = str(" cries out the dwarfs name!")
+    elif strike_Kill  == int(5):
+        RAN_Kill = str( " bursts into light!")    
+    elif strike_Kill  == int(6):
+        RAN_Kill = str(" flies into the roof and vanishes!")
+    elif strike_Kill  == int(7):
+        RAN_Kill = str(" creates a smog and disappears!")
+    elif strike_Kill  == int(8):
+        RAN_Kill = str( " screams at the dwarf!")            
+    else:
+        RAN_Kill = str(" flies into the shadows!" )
+        
+    return RAN_Kill       
