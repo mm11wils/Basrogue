@@ -1,0 +1,236 @@
+import libtcodpy2 as libtcod
+import shelve
+
+strike_H =  libtcod.random_get_int(0,1,16)
+
+strike_M =  libtcod.random_get_int(0,1,24)
+
+strike_Name = libtcod.random_get_int(0,1,31)
+
+strike_Surname =  libtcod.random_get_int(0,1,5)
+
+f1 = libtcod.random_get_int(0,1,50)
+i1 = libtcod.random_get_int(0,1,50)  
+n1 = libtcod.random_get_int(0,1,50)
+d1 = libtcod.random_get_int(0,1,50)
+a1 = libtcod.random_get_int(0,1,50)
+g1 = libtcod.random_get_int(0,1,50)
+e1 = libtcod.random_get_int(0,1,50)
+
+strike_height = libtcod.random_get_int(0,1,9)
+strike_heighttwo  = libtcod.random_get_int(0,1,9)
+
+age = 0
+height = 0
+
+def got_name():
+    global strike_H, strike_M, strike_Name
+     
+    load_game()
+     
+    if strike_Name == int(1):
+        RAN_Name = str('Eidu')
+    elif strike_Name == int(2):
+        RAN_Name = str('Liddo')
+    elif strike_Name == int(3):
+        RAN_Name = str('Bofel')
+    elif strike_Name == int(4):
+        RAN_Name = str('Oige')
+    elif strike_Name == int(5):
+        RAN_Name = str('Fisgi')
+    elif strike_Name == int(6):
+        RAN_Name = str('Thir')
+    elif strike_Name == int(7):
+        RAN_Name = str('Borin')
+    elif strike_Name == int(8):
+        RAN_Name = str('Torgal')
+    elif strike_Name == int(9):
+        RAN_Name = str('Dorin')
+    elif strike_Name == int(10):
+        RAN_Name = str('Gili')
+    elif strike_Name == int(11):
+        RAN_Name = str('Glinus')
+    elif strike_Name == int(12):
+        RAN_Name = str('Belthur')
+    elif strike_Name == int(13):
+        RAN_Name = str('Nor')        
+    elif strike_Name == int(14):
+        RAN_Name = str('Ari')
+    elif strike_Name == int(15):
+        RAN_Name = str('Rarro')
+    elif strike_Name == int(16):
+        RAN_Name = str('Figdi')
+    elif strike_Name == int(17):
+        RAN_Name = str('Farok')
+    elif strike_Name == int(18):
+        RAN_Name = str('Migni')
+    elif strike_Name == int(19):
+        RAN_Name = str('Nebi')
+    elif strike_Name == int(20):
+        RAN_Name = str('Gorkori')
+    elif strike_Name == int(21):
+        RAN_Name = str('Lignar')
+    elif strike_Name == int(22):
+        RAN_Name = str('Rikas')
+    elif strike_Name == int(23):
+        RAN_Name = str('Dwalin')
+    elif strike_Name == int(24):
+        RAN_Name = str('Negrim')
+    elif strike_Name == int(25):
+        RAN_Name = str('Torrok')
+    elif strike_Name == int(26):
+        RAN_Name = str('Glimar')
+    elif strike_Name == int(27):
+        RAN_Name = str('Rodden')
+    elif strike_Name == int(28):
+        RAN_Name = str('Ulgrim')
+    elif strike_Name == int(29):
+        RAN_Name = str('Nori')   
+    elif strike_Name == int(30):
+        RAN_Name = str('Ulf')          
+    else:
+        RAN_Name = str('Ori ')    
+        
+    return RAN_Name
+        
+def got_h():
+    global strike_H, strike_M, strike_Name
+    load_game()
+    
+    if strike_H == int(1):
+        RAN_H = str('useless ')
+    elif strike_H == int(2):
+        RAN_H = str('poor ')
+    elif strike_H == int(3):
+        RAN_H = str('adequate ')
+    elif strike_H == int(4):
+        RAN_H = str('great ')
+    elif strike_H == int(5):
+        RAN_H = str('noble ')
+    elif strike_H == int(6):
+        RAN_H = str('good ')
+    elif strike_H == int(7):
+        RAN_H = str('gifted ')
+    elif strike_H == int(8):
+        RAN_H = str('wealthy ')  
+    elif strike_H == int(9):
+        RAN_H = str('wise ')
+    elif strike_H == int(10):
+        RAN_H = str('worthy ')
+    elif strike_H == int(11):
+        RAN_H = str('adept ')
+    elif strike_H == int(12):
+        RAN_H = str('heroic ')
+    elif strike_H == int(13):
+        RAN_H = str('lonly ')
+    elif strike_H == int(14):
+        RAN_H = str('grand ')             
+    elif strike_H == int(15):
+        RAN_H = str('deserving ')           
+        
+    else:
+        RAN_H = str('master ')   
+        
+        
+        
+    return RAN_H
+
+def got_m():        
+    global strike_H, strike_M, strike_Name
+    load_game()    
+    
+    if strike_M == int(1):
+        RAN_M = str('mason')
+    elif strike_M == int(2):
+        RAN_M = str('warrior')
+    elif strike_M == int(3):
+        RAN_M = str('craftsman')
+    elif strike_M == int(4):
+        RAN_M = str('carpenter')
+    elif strike_M == int(5):
+        RAN_M = str('miner')
+    elif strike_M == int(6):
+        RAN_M = str('trapper')
+    elif strike_M == int(7):
+        RAN_M = str('traveller')
+    elif strike_M == int(8):
+        RAN_M = str('butcher') 
+    elif strike_M == int(9):
+        RAN_M = str('cook')
+    elif strike_M == int(10):
+        RAN_M = str('tanner')
+    elif strike_M == int(11):
+        RAN_M = str('weaver')
+    elif strike_M == int(12):
+        RAN_M = str('recruit') 
+    elif strike_M == int(13):
+        RAN_M = str('King')
+    elif strike_M == int(14):
+        RAN_M = str('farmer')
+    elif strike_M == int(15):
+        RAN_M = str('surgen')
+    elif strike_M == int(16):
+        RAN_M = str('peasent')
+    elif strike_M == int(17):
+        RAN_M = str('tax collector')
+    elif strike_M == int(18):
+        RAN_M = str('brewer')
+    elif strike_M == int(19):
+        RAN_M = str('animal trainer')
+    elif strike_M == int(20):
+        RAN_M = str('herder')        
+    elif strike_M == int(21):
+        RAN_M = str('bard')
+    elif strike_M == int(22):
+        RAN_M = str('minstrel')        
+    elif strike_M == int(23):
+        RAN_M = str('commoner')        
+        
+    else:
+        RAN_M = str('hunter')
+        
+    return RAN_M
+    
+def find_age():
+    global age , f1 , i1 , n1 , d1 , a1 , g1 , e1
+    load_game()
+
+    age = f1 + i1 + n1+d1+a1+g1+e1
+    
+    return age       
+
+def find_height():
+    global height , strike_height , strike_heighttwo
+    
+    height = (32 + strike_height + strike_heighttwo)
+    
+    print height
+    return height
+    
+def save_game():
+    #open a new empty shelve (possibly overwriting an old one) to write the game data
+    file = shelve.open('savegame_Name' , 'n')
+    file['strike_H'] = strike_H  
+    file['strike_M'] = strike_M
+    file['strike_Name'] = strike_Name
+    file['age'] = age
+    file['height'] = height
+
+    file.close()
+    
+def load_game():
+    #open the previously saved shelve and load the game data
+    global strike_H, strike_M,strike_Name, age, height
+ 
+    file = shelve.open('savegame_Name' , 'r')
+
+    strike_H = file['strike_H']
+    strike_M = file['strike_M']
+    strike_Name = file['strike_Name']
+    age = file['age']
+    height = file['height']
+
+
+    file.close()    
+    
+save_game()      
