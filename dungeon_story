@@ -1,0 +1,50 @@
+import libtcodpy2 as libtcod
+import shelve 
+SET_STORY =  libtcod.random_get_int(0,1,3) 
+
+
+def set_story():
+            
+    if SET_STORY == 1:
+        story_name = (' Prepare to take on the inhabitants of Moria.' )
+        
+    elif SET_STORY == 2:
+        story_name = (' Ready Up! For tonight you take the northern throne!')
+        
+    elif SET_STORY == 3:
+        story_name = (' Arms at the ready! This place feels lively!')    
+        
+    save_game()
+    return story_name
+    
+def story_by_level():
+    global SET_STORY
+    load_game()
+    
+    if SET_STORY == 1:
+        story_level = (' delves deeper into the mines...' )
+        
+    elif SET_STORY == 2:
+        story_level = (' is getting closer to the northern throne ')
+        
+    else:
+        story_level = (' can feel the presence of stronger creatures!')    
+
+    return story_level    
+     
+def save_game():
+    #open a new empty shelve (possibly overwriting an old one) to write the game data
+    file = shelve.open('savegame_Story' , 'n')
+    file['SET_STORY'] = SET_STORY  
+    file.close()
+    
+def load_game():
+    #open the previously saved shelve and load the game data
+    global SET_STORY
+ 
+    file = shelve.open('savegame_Story' , 'r')
+    SET_STORY = file['SET_STORY']
+
+    file.close()    
+    
+save_game()    
