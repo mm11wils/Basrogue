@@ -1,0 +1,44 @@
+import libtcodpy2 as libtcod
+
+def get_weight_var():
+ ##Item(weight = 4 + int(weapon_var.get_weight_var())
+
+    p_weight =  libtcod.random_get_int(0,0,100) 
+    
+    if p_weight < 80:
+        shock_weight = -1
+        
+    else:
+        shock_weight = 0
+            
+    return shock_weight
+
+    
+def get_bonus_var():
+## for  power_bonus = 2 + int(weapon_var.get_bonus_var()))
+
+    p_bonus =  libtcod.random_get_int(0,0,100) 
+    
+    if p_bonus < 80:
+        shock_bonus = -1
+        
+    else:
+        shock_bonus = 0
+
+    return shock_bonus    
+    
+def get_sword():
+    p_sword = libtcod.random_get_int(0,0,100)
+    
+    if p_sword < 50:
+        var_name = ('Talwar')
+        
+    else:
+        var_name = ('long sword')
+        
+        
+        
+    return var_name
+    
+#scimitar    
+
