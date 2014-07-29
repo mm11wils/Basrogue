@@ -1,0 +1,97 @@
+TO DO LIST FOR: A DWARF OF MIDDLE EARTH.
+
+    --> Change of Theme to African!! Exciting stuff.
+
+    ¿¿Fix Character creation bugs?? 
+    ¿#fix run away Ai -- Jumping 2 blocks instead of one.
+    ¿#Make floor stay in the fog when out of FOV while mobs walk over it.
+    ¿#New game not resetting stats or name.
+    ¿#Continuing a game crashes due to Ai not having a path
+            
+**ID'ING ITEMS    
+    *add bonuses to id'ed items
+    *add more id-able items (so far only the Hammer is Id-able)
+    *make it possible to only ever have one possible id-ed orcrist in whole play through
+    
+    *change icon for lamp & Change shield back to comma    
+    *Sort Mob List    
+    *Allow Mobs to come up the stairs -- Random chance of appearing 1:300                   
+    *Add random items to find that do nothing           
+    *Limit Health more/cant increase during play* Change to a default of 2 and creation allows + 1    
+    *CREATURE STATUS AI*   
+    *ai that turns hostile when attacked aka FairyAI
+    *@Scrolling inventory list*      
+    *@Gods and abilities RNG --> special items
+    *@Doors    
+    *@Npc's
+    
+    [More Content]
+    @Stun Implement <--> if player moved in the last turn (Skill)  True/False [Like the Charge in Sil]
+    @Pop up text hints (where would the hints go?)
+        Options> Toggability     
+    
+    --> TEXT WRITTEN
+        for stun
+    --> ADD MORE PRIDE STATUS'S 
+        Clever pride statues eg (if rabbit_kill > the rest then pride statues = rabbit killer)    
+        Puns
+    --> MOBS
+        MOBS:Research more MOBS
+        MOB:Dragon gets louder as you get closer (smuag)
+        MOB:Exploding Orcs
+        MOB:Statue Cretures/Trees
+    --> ITEMS
+        Random Useless Shit
+        Pages/Books (Mewlip poem)
+        Containers
+        Legendary Items
+        Character's Items
+    --> Equipment
+        leveling up names
+    --> BALANCING
+        seperate items and mobs onto floors
+
+    <Debug Changes>
+    >Add health back after creation<
+    >Remove printing to console<
+    >Remove Printing Inv. weight when dropping items<
+    >remove printing screen_track<
+    >remove printing weapon_leveling<
+    >add try-except to stats selection in the menu<
+    >Rabbit Ai<
+    
+    [FUTURE CONTENT]
+    --> Splitting, depth 2 gets a random selection of creature, e.g. biomes
+    --> Lock picking of boxes (Skill)
+    --> Random Location and start messages
+    --> Structure generation
+    --> permanent game elements/items
+    --> collectables (Random shit that does nothing, unlocks achievements)
+    --> More Damage messages (LOADS MORE & Pun so it's punny)
+    --> More Names
+    --> More Professions
+    --> More Character History
+    --> More titles
+    --> Total stat and options
+    --> Decreasing mob exp gain
+    --> Finesse AI and Balancing
+    
+    [MAYBE CONTENT]
+    --> Higher Graphics    
+        character generation (appearance of dwarf)
+    --> Sounds && Music
+
+Key:
+    *Improvements
+    ¿UndefinedBugs?
+    ¿#Fixlaterbugs
+    #DefinedBugs
+    @unsurecontent
+    [Content]
+    <Debugging>
+
+Useful Websites:
+	For dwarven runes:
+http://derhobbit-film.de/rune_generator.shtml#rune
+	For Name/Sword Generator:
+http://www.ageofthering.com/nametranslator/index.php
